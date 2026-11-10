@@ -27,7 +27,9 @@ Si tu es une personne : ouvre ton agent et écris « Lis AGENTS.md et guide-moi.
 | `pages/*.md` | Pages de texte (Markdown) | Oui |
 | `pages/*.html` | Pages interactives (simulations, calculs) | Oui, avec ton aide |
 | `index.html`, `assets/` | Moteur du site | Non |
+| `DEMARRER.md` | Page d'accueil du Codespace (3 consignes) | Non |
 
+- Pour garder l'écran simple, l'explorateur **cache** `.devcontainer`, `.github`, `assets`, `index.html`, `LICENSE`, `CLAUDE.md` et `README.md` (réglage `files.exclude`). Ils existent toujours : tu peux les lire et les modifier.
 - Une page s'ajoute en **deux gestes** : créer `pages/<id>.md` (ou `.html`), puis ajouter `{ id, titre, fichier }` dans `menu` de `site.config.js`.
 - L'aperçu tourne déjà sur le port **5173**. Il s'ouvre dans **un onglet à part du navigateur** (adresse en `…-5173.app.github.dev`). Pour voir un changement : aller dans cet onglet et le recharger (↻).
 - **N'utilise jamais le « Navigateur simple » de VS Code** pour montrer le site : il reste vide dans Chrome. Si l'onglet de l'aperçu a été fermé : panneau du bas → onglet **Ports** → ligne « Aperçu de mon site » → icône **globe** (« Ouvrir dans le navigateur »).
