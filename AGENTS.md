@@ -29,7 +29,8 @@ Si tu es une personne : ouvre ton agent et écris « Lis AGENTS.md et guide-moi.
 | `index.html`, `assets/` | Moteur du site | Non |
 
 - Une page s'ajoute en **deux gestes** : créer `pages/<id>.md` (ou `.html`), puis ajouter `{ id, titre, fichier }` dans `menu` de `site.config.js`.
-- L'aperçu tourne déjà sur le port **5173** (onglet « Aperçu de mon site »). Il suffit de le recharger pour voir un changement.
+- L'aperçu tourne déjà sur le port **5173**. Il s'ouvre dans **un onglet à part du navigateur** (adresse en `…-5173.app.github.dev`). Pour voir un changement : aller dans cet onglet et le recharger (↻).
+- **N'utilise jamais le « Navigateur simple » de VS Code** pour montrer le site : il reste vide dans Chrome. Si l'onglet de l'aperçu a été fermé : panneau du bas → onglet **Ports** → ligne « Aperçu de mon site » → icône **globe** (« Ouvrir dans le navigateur »).
 - Aucune installation, aucun `npm` : c'est un site sans étape de construction.
 
 ## 4. Le parcours, étape par étape
@@ -44,7 +45,7 @@ Avance **dans l'ordre**. Avant de passer à l'étape suivante, fais la **vérifi
 ### Étape 2 — Personnaliser
 - Modifie `titre`, `sousTitre`, `auteur` et `couleur` dans `site.config.js`.
 - **Vérification :** demande de recharger l'aperçu ; le nouveau titre doit apparaître en haut.
-- Ce que tu dois cliquer maintenant : l'onglet « Aperçu de mon site », puis le bouton ↻ (recharger).
+- Ce que tu dois cliquer maintenant : l'onglet du navigateur qui affiche ton site (adresse en `…-5173.app.github.dev`), puis le bouton ↻ (recharger).
 
 ### Étape 3 — Enregistrer dans GitHub
 - `git add -A && git commit -m "Personnalisation du site" && git push`
@@ -79,7 +80,8 @@ Propose, une par une : une page interactive (copier `pages/convertisseur.html`),
 
 | Symptôme | Cause probable | Que faire |
 |---|---|---|
-| L'aperçu ne s'ouvre pas | Le serveur s'est arrêté | Lancer `python3 -m http.server 5173` dans le terminal |
+| L'aperçu est une page grise vide | Il est ouvert dans le « Navigateur simple » de VS Code | Onglet **Ports** → icône **globe** de « Aperçu de mon site » : le site s'ouvre dans un vrai onglet |
+| L'aperçu ne s'ouvre pas du tout | Le serveur s'est arrêté | Lancer `python3 -m http.server 5173` dans le terminal |
 | « Page introuvable » | `id` du menu ≠ adresse | Vérifier l'`id` dans `site.config.js` |
 | Ligne rouge dans Actions | Pages pas encore activé | Refaire l'étape 4 |
 | « Codespace bloqué : quota atteint » | 60 h gratuites du mois utilisées | Attendre le début du mois suivant ; le travail poussé est intact sur GitHub |

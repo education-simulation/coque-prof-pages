@@ -21,10 +21,11 @@
       "openFiles": ["AGENTS.md"]
     }
   },
-  // Lance l'aperçu du site à chaque ouverture du Codespace.
+  // Lance l'aperçu du site à chaque ouverture du Codespace, dans un NOUVEL ONGLET du navigateur :
+  // l'aperçu intégré à VS Code (« Navigateur simple ») reste vide dans Chrome (testé le 10/11/2026).
   "postAttachCommand": "python3 -m http.server 5173",
   "forwardPorts": [5173],
   "portsAttributes": {
-    "5173": { "label": "Aperçu de mon site", "onAutoForward": "openPreview" }
+    "5173": { "label": "Aperçu de mon site", "onAutoForward": "openBrowser" }
   }
 }
