@@ -14,7 +14,7 @@
 
   // Bandeau « aperçu » : visible seulement dans le Codespace (adresse en .app.github.dev),
   // jamais sur le site publié. Il dit au prof où il est et comment revenir à son atelier.
-  if (/\.app\.github\.dev$/.test(location.hostname) || location.hostname === "localhost") {
+  if (S.bandeauApercu !== false && (/\.app\.github\.dev$/.test(location.hostname) || location.hostname === "localhost")) {
     const b = document.createElement("div");
     b.className = "bandeau-apercu";
     b.innerHTML =
