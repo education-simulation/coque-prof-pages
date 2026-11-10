@@ -16,9 +16,13 @@ Patience : la première ouverture prend 5 à 10 minutes.
    Sans ce clic, ton site ne démarre pas et Mistral reste éteint.
 
 
-1) TON ASSISTANT
-   À droite : Mistral Vibe. Panneau fermé ? Clique sur l'icône Mistral
-   (le « M » orange) dans la barre tout à gauche.
+1) TON ASSISTANT : choisis-en UN
+   Dans la barre tout à gauche, clique sur l'icône de ton assistant :
+     - Mistral Vibe : le « M » orange (compte Mistral, gratuit pour commencer)
+     - Claude : l'étoile orange (abonnement Claude Pro)
+     - ChatGPT : l'icône Codex (compte ChatGPT, gratuit pour commencer)
+   Les explications ci-dessous montrent Mistral ; les autres se
+   connectent de la même façon (« Se connecter », puis autoriser).
    Première fois : clique « Continuer avec Mistral AI ».
    Une fenêtre demande « Voulez-vous que Code ouvre le site web externe ? »
    (console.mistral.ai) : clique sur le bouton vert « Ouvrir »,

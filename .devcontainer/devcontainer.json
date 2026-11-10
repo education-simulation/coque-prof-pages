@@ -7,12 +7,14 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "mistralai.mistral-vibe-code"
+        "mistralai.mistral-vibe-code",
+        "anthropic.claude-code",
+        "openai.chatgpt"
       ],
       "settings": {
         "workbench.startupEditor": "none",
         "files.autoSave": "afterDelay",
-        // Un seul assistant : Mistral. On coupe le chat Copilot intégré à VS Code.
+        // Assistants proposés : Mistral, Claude, ChatGPT (Codex). On coupe le chat Copilot intégré à VS Code.
         "chat.disableAIFeatures": true,
         // Ne pas encadrer les lettres accentuées comme des caractères suspects.
         "editor.unicodeHighlight.nonBasicASCII": false,

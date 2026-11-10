@@ -1,6 +1,6 @@
 # Atelier RASF — mon site de cours
 
-Un site de cours simple et gratuit, que tu construis avec l'assistant Mistral, sans rien installer.
+Un site de cours simple et gratuit, que tu construis avec l'assistant de ton choix (Mistral, Claude ou ChatGPT), sans rien installer.
 
 ---
 
@@ -20,7 +20,7 @@ Tu es sur **ton** site. Ouvre ton atelier :
    > C'est prêt quand la **barre du bas devient bleue (RASF)** et que la page `DEMARRER.md` s'affiche.
    > Une fenêtre « Faites-vous confiance aux auteurs des fichiers de ce dossier ? » apparaît ? Clique sur le bouton vert **Approuver le dossier et continuer**.
 
-2. Dans le panneau de droite, **Mistral Vibe**, écris : **« Lis AGENTS.md et guide-moi. »**
+2. Ouvre ton assistant (Mistral, Claude ou ChatGPT : icônes de la barre de gauche) et écris : **« bonjour »**.
 
 ### Les fois suivantes
 

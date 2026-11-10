@@ -1,6 +1,6 @@
 # AGENTS.md — mode d'emploi pour l'agent (niveau 1 : GitHub Pages)
 
-Ce fichier s'adresse à l'assistant de programmation (Mistral Vibe).
+Ce fichier s'adresse à l'assistant de programmation choisi par la personne : Mistral Vibe, Claude ou ChatGPT (Codex).
 Si tu es une personne : ouvre ton agent et écris « Lis AGENTS.md et guide-moi. »
 
 ## 0. Quel que soit le premier message
