@@ -17,9 +17,13 @@
   if (S.bandeauApercu !== false && (/\.app\.github\.dev$/.test(location.hostname) || location.hostname === "localhost")) {
     const b = document.createElement("div");
     b.className = "bandeau-apercu";
+    const local = location.hostname === "localhost";
     b.innerHTML =
-      "<strong>👀 Ceci est l'aperçu de ton site.</strong> Toi seul le vois, et seulement pendant que ton atelier est ouvert." +
-      "<br>Pour le modifier, <strong>retourne sur l'onglet « RASF — Atelier … »</strong> de ton navigateur et parle à Mistral." +
+      "<strong>👀 Ceci est l'aperçu de ton site.</strong> Toi seul le vois" +
+      (local ? ", sur ton ordinateur." : ", et seulement pendant que ton atelier est ouvert.") +
+      "<br>Pour le modifier, " +
+      (local ? "<strong>parle à ton assistant</strong> dans ton application (Antigravity…)."
+             : "<strong>retourne sur l'onglet « RASF — Atelier … »</strong> de ton navigateur et parle à ton assistant.") +
       " Ensuite, reviens ici et appuie sur <strong>Cmd + R</strong> (Mac) ou <strong>Ctrl + R</strong> (Windows) pour voir le changement.";
     document.body.prepend(b);
 
