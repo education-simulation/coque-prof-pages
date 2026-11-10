@@ -28,5 +28,5 @@ Ne crée pas de nouvel atelier : rouvre **le même** sur https://github.com/code
 
 ---
 
-Le pas-à-pas illustré, du compte GitHub jusqu'à l'atelier : *(lien du site-guide, à venir)*.
+Le pas-à-pas illustré, du compte GitHub jusqu'à l'atelier : **[le site-guide RASF](https://education-simulation.github.io/coque-prof-guide/)**.
 Modèle proposé par le RASF · Licence MIT.
